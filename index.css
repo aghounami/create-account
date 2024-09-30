@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: black;
+  /* color: white; */
+}
+
+.container {
+  background-image: url("https://cdn.discordapp.com/attachments/1154188230166589440/1290310567227035698/account_web.webp?ex=66fbfedc&is=66faad5c&hm=62f4a525f7bfb042949c00a36f8213f9c5d92057e1b8c6ee02539b36de0db86b&");
+  background-size: cover;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  max-width: 28rem;
+  height: auto;
+  margin-left: 5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.start {
+  color: #8c8c8ce0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.title {
+    display: flex;
+    gap: 1rem;
+}
+
+.title1, .title2 , .title3 {
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  font-weight: 700;
+  font-size: 2.9rem;
+  color: black;
+  margin-bottom: 2rem;
+  animation: color-animation 0.5s linear infinite;
+}
+
+.name_lastname {
+  display: flex;
+  gap: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.name_lastname div {
+  flex-grow: 1;
+}
+
+.headername {
+  position: absolute;
+  font-size: 0.7rem;
+  color: #8c8c8ce0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 580;
+  padding-left: 0.6rem;
+  padding-top: 0.5rem;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.first_name,
+.last_name,
+.email,
+.password {
+  position: relative;
+}
+
+.input_ {
+    border: none;
+    height: 100%;
+    background-color: #e9ecf8;
+    padding: 1.6rem 0.6rem 0.8rem;
+    font-size: 0.7rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 100%;
+    /* cursor: pointer; */
+}
+
+input:focus {
+  background-color: white;
+}
+
+button {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: #406afe;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 1px 5px 24px 1px rgba(52, 0, 247, 0.29);
+    margin-top: 2rem;
+    transition: 0.5s;
+    text-decoration:aliceblue;
+    
+}
+
+button:hover {
+  background-color: #2e4ff9;
+  scale: 1.2; 
+}
+
+.link {
+  color: #406afe;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+  
+.title1 {
+    --color-1: #7d7d7d;
+    --color-2: #000000;
+    --color-3: #7d7d7d;
+    
+  }
+
+  .title2 {
+    --color-1: #000000;
+    --color-2: #7d7d7d;
+    --color-3: #000000;
+  }
+
+    .title3 {
+        --color-1: #7d7d7d;
+        --color-2: #000000;
+        --color-3: #7d7d7d;
+    }
+    
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
