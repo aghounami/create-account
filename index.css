@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   display: flex;
   font-family: "Poppins", sans-serif;
@@ -167,3 +169,18 @@ button:hover {
     99%   {color: var(--color-3)}
     100%  {color: var(--color-1)}
   }
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 0;
+  }
+
+  .container {
+    height: 100%;
+    justify-content: center;
+  }
+
+  html {
+    font-size: 80.5%;
+  }
+}
